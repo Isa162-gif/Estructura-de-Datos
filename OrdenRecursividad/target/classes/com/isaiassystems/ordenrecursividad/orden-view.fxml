@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.isaiassystems.ordenrecursividad.controller.OrdenController"
+      spacing="15" alignment="CENTER" style="-fx-background-color: #f4f4f4;"
+      prefWidth="400" prefHeight="250">
+
+    <Label text="Verificador de Orden de Números" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Número:"/>
+        <TextField fx:id="txtNumero" promptText="Ingresa un número"/>
+    </HBox>
+
+    <Button fx:id="btnVerificar" text="Verificar Orden" onAction="#verificarOrden"
+            style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+    <Label fx:id="lblResultado" text="" wrapText="true" style="-fx-font-size: 14px;"/>
+
+</VBox>
